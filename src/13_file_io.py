@@ -12,8 +12,8 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # YOUR CODE HERE
 readFoo = open('foo.txt')
 
-# with open('foo.txt') as f:
-#     print(f.read())
+with open('foo.txt') as f:
+    print(f.read())
 
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
@@ -22,8 +22,8 @@ readFoo = open('foo.txt')
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
-with open('bar.txt', 'w') as f:
-    f.write("Three \nlines\nof code")
+with open('bar.txt', 'w') as g:
+    g.write("Three \nlines\nof code")
     
-with open('bar.txt', 'r') as g:
-    print(g.read())
+with open('bar.txt', 'r') as h:
+    print(h.read())

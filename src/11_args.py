@@ -58,9 +58,9 @@ def f3(a, b = 1):
 
 # # YOUR CODE HERE
 
-# def f4(**kwargs):
-#     for key, value in kwargs.items():
-#         print(f"{key}: {value}")
+def f4(**kwargs):
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
 
 # # Should print
 # # key: a, value: 12
@@ -73,15 +73,15 @@ def f3(a, b = 1):
 # # key: founded, value: "March 23, 1868"
 # f4(city="Berkeley", population=121240, founded="March 23, 1868")
 
-# # d = {
-# #     "monster": "goblin",
-# #     "hp": 3
-# # }
+d = {
+    "monster": "goblin",
+    "hp": 3
+}
+
+
 
 # # # How do you have to modify the f4 call below to make this work?
-# # f4(d)
+f4(**d)
 
 # Instead of accepting arbitrary args, we have to accept default arguments.
-# def f4(x):
-#     for key, value in x.items():
-#         print(f"{key}: {value}")
+

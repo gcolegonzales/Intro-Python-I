@@ -47,6 +47,7 @@ print(waypoint)
 # more human-readable? Hint: Look up the `object.__str__` method
 
 # Make a new geocache "Newberry Views", diff 1.5, size 2, 44.052137, -121.41556
+newGeo = Geocache("Newberry Views", 1.5, 2, 44.052137, -121.41556)
 
 # YOUR CODE HERE
 
